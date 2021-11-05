@@ -1,5 +1,15 @@
-[2021-11-05 15:40:45,519: INFO: stage_01_load_save]: Starting: Stage01 Started
-[2021-11-05 15:40:45,521: INFO: all_utils]: yaml file read: {path_to_yaml}  loaded successfully.
-[2021-11-05 15:40:45,528: INFO: all_utils]: directory saved at data/dog
-[2021-11-05 15:40:45,574: INFO: all_utils]: directory saved at data/cat
-[2021-11-05 15:40:45,751: INFO: stage_01_load_save]: Starting: Stage01 Completed and all data stored in the local given locations.
+[2021-11-05 15:43:07,401: INFO: stage_01_load_save]:  >>>  Starting: Stage01 Started
+[2021-11-05 15:43:07,403: INFO: all_utils]: yaml file read: {path_to_yaml}  loaded successfully.
+[2021-11-05 15:43:07,410: INFO: all_utils]: directory saved at data/dog
+[2021-11-05 15:43:07,455: INFO: all_utils]: directory saved at data/cat
+[2021-11-05 15:43:07,613: INFO: stage_01_load_save]: Starting: Stage01 Completed and all data stored in the local given locations.>>>>
+[2021-11-05 15:44:33,144: INFO: stage_01_load_save]:  >>>  Starting: Stage01 Started
+[2021-11-05 15:44:33,146: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 15:44:33,153: INFO: all_utils]: directory saved at data/dog
+[2021-11-05 15:44:33,201: INFO: all_utils]: directory saved at data/cat
+[2021-11-05 15:44:33,384: INFO: stage_01_load_save]: Starting: Stage01 Completed and all data stored in the local given locations.>>>>
+[2021-11-05 15:45:01,007: ERROR: stage_01_load_save]: name 'throw' is not defined
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 55, in <module>
+    throw()
+NameError: name 'throw' is not defined

@@ -8,7 +8,7 @@ import logging
 def read_yaml(path_to_yaml: str) -> dict:
     with open(path_to_yaml) as yaml_file:
         content = yaml.safe_load(yaml_file)
-    logging.info("yaml file read: {path_to_yaml}  loaded successfully.")
+    logging.info(f"yaml file read: {path_to_yaml}  loaded successfully.")
 
     return content
 

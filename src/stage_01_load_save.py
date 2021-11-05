@@ -52,9 +52,9 @@ if __name__ == '__main__':
     parsed_args =args.parse_args()
 
     try:
-        logging.info("Starting: Stage01 Started")
+        logging.info(" >>>  Starting: Stage01 Started")
         get_data(config_path=parsed_args.config)
-        logging.info("Starting: Stage01 Completed and all data stored in the local given locations.")
+        logging.info("Starting: Stage01 Completed and all data stored in the local given locations.>>>>")
     except Exception as e:
         logging.exception(e)
         raise e
