@@ -5,6 +5,14 @@ import pandas as pd
 import os
 import shutil
 from tqdm import tqdm
+import logging
+
+logging_str= "%[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
+log_dir= "logs" #This is us mentioning that we need a logs folder inside the project.
+create_directory([log_dir])
+logging.basicConfig(filename=os.path.join(log_dir,"running_logs.log"),level=logging.INFO,format=logging_str,filemode='a')
+
+
 
 
 #Data Copy Util
@@ -41,5 +49,10 @@ if __name__ == '__main__':
     
     parsed_args =args.parse_args()
 
-
-    get_data(config_path=parsed_args.config)
+    try:
+        logging.info("Starting: Stage01 Started")
+        get_data(config_path=parsed_args.config)
+        logging.info("Starting: Stage01 Completed and all data stored in the local given locations.")
+    except Exception as e:
+        logging.exception(e)
+        raise e
