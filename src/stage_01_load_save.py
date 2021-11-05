@@ -22,11 +22,11 @@ def copy_file(source_download_dir,local_data_dir):
 
 def get_data(config_path):
     config = read_yaml(config_path)
-    remote_data_path=config["data_source"]
+    #remote_data_path=config["data_source"]
     source_download_dirs = config["source_download_dirs"]
     local_data_dirs = config["local_data_dirs"]
 
-    for source_download_dir,local_data_dir in tqdm(zip(source_download_dirs,local_data_dirs),total=2,desc= "Iterating over list of folders",color="red"):
+    for source_download_dir,local_data_dir in tqdm(zip(source_download_dirs,local_data_dirs),total=2,desc= "Iterating over list of folders",colour="red"):
         create_directory([local_data_dir])
         copy_file(source_download_dir,local_data_dir)
 
