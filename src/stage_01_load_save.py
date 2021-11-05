@@ -7,9 +7,11 @@ import shutil
 from tqdm import tqdm
 import logging
 
-logging_str= "%[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
+logging_str= "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
 log_dir= "logs" #This is us mentioning that we need a logs folder inside the project.
-create_directory([log_dir])
+#not working
+#create_directory([log_dir])
+os.makedirs(log_dir,exist_ok=True)
 logging.basicConfig(filename=os.path.join(log_dir,"running_logs.log"),level=logging.INFO,format=logging_str,filemode='a')
 
 

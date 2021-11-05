@@ -1,0 +1,5 @@
+[2021-11-05 15:40:45,519: INFO: stage_01_load_save]: Starting: Stage01 Started
+[2021-11-05 15:40:45,521: INFO: all_utils]: yaml file read: {path_to_yaml}  loaded successfully.
+[2021-11-05 15:40:45,528: INFO: all_utils]: directory saved at data/dog
+[2021-11-05 15:40:45,574: INFO: all_utils]: directory saved at data/cat
+[2021-11-05 15:40:45,751: INFO: stage_01_load_save]: Starting: Stage01 Completed and all data stored in the local given locations.
