@@ -1,0 +1,13 @@
+dvc
+tensorflow
+matplotlib
+numpy
+pandas
+tqdm
+pyYAML
+#Boto is for aws: s3  command line access integration
+boto3
+
+
+
+
