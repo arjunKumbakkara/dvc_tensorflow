@@ -3,6 +3,19 @@ import os
 import pandas
 import json
 import logging
+import time
+
+
+
+
+
+def get_timestamp(name):
+    #Timestamp creation is best this way
+    timestamp= time.asctime().replace(" ","_").replace(":","_")
+    #Formatting the unique name
+    unique_name= f"{name}_at_{timestamp}"
+    return unique_name
+
 
 
 def read_yaml(path_to_yaml: str) -> dict:
