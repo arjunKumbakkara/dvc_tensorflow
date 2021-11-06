@@ -648,3 +648,27 @@ AttributeError: module 'keras.api._v2.keras.callbacks' has no attribute 'TensoBo
 [2021-11-06 13:57:44,765: INFO: callbacks]: Tensorboard Callback is saved at artifacts/callbacks/tensorboard_cb.cb
 [2021-11-06 13:57:44,767: INFO: callbacks]: Checkppoint callback is being saved at artifacts/callbacks/checkpoint_cb.cb
 [2021-11-06 13:57:44,767: INFO: stage_03_prepare_callback]: Ended: Stage03 Completed and Callbacks stored as binary in artifacts>>>>
+[2021-11-06 15:23:02,420: INFO: stage_04_train]:  >>>  Starting: Stage 04 Training Started
+[2021-11-06 15:23:02,423: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 15:23:02,424: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 15:23:02,424: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 15:23:02,764: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 15:23:02,764: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 15:23:02,764: ERROR: stage_04_train]: name 'bin_file_name' is not defined
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 51, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 37, in train_model
+    callbacks= get_callbacks(callback_dir_path)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/callbacks.py", line 41, in get_callbacks
+    callback_path=[os.path.join(callback_dir_path,bin_file_name) for bin_file in os.listdir(callback_dir_path)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/callbacks.py", line 42, in <listcomp>
+    if bin_file.endswith(".cb") ]
+NameError: name 'bin_file_name' is not defined
+[2021-11-06 15:23:42,869: INFO: stage_04_train]:  >>>  Starting: Stage 04 Training Started
+[2021-11-06 15:23:42,872: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 15:23:42,873: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 15:23:42,873: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 15:23:43,214: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 15:23:43,214: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 15:23:43,216: INFO: stage_04_train]: Ended: Stage04  training is Completed and  model saved>>>>

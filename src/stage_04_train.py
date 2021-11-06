@@ -1,6 +1,6 @@
 from src.utils.all_utils import create_directory, read_yaml
 import argparse
-from src.utils.models import get_callbacks
+from src.utils.callbacks import get_callbacks
 from src.utils.models import load_full_model
 import pandas as pd
 #import sys
