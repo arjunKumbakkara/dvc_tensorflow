@@ -44,5 +44,6 @@ def get_callbacks(callback_dir_path):
     callbacks=[
         joblib.load(path) for path in callback_path
         ]
+    logging.info(f" saved callbacks loaded from {callback_dir_path}")
 
     return callbacks
