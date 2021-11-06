@@ -10,3 +10,5 @@ venv.bak/
 
 #Ignoring the secrets file
 config/secrets.yaml
+
+logs/running_logs.log

@@ -672,3 +672,107 @@ NameError: name 'bin_file_name' is not defined
 [2021-11-06 15:23:43,214: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
 [2021-11-06 15:23:43,214: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
 [2021-11-06 15:23:43,216: INFO: stage_04_train]: Ended: Stage04  training is Completed and  model saved>>>>
+[2021-11-06 15:26:37,310: INFO: stage_04_train]:  >>>  Starting: Stage 04 Training Started
+[2021-11-06 15:26:37,313: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 15:26:37,314: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 15:26:37,314: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 15:26:37,756: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 15:26:37,757: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 15:26:37,757: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+
+[2021-11-06 15:26:37,758: INFO: stage_04_train]: Ended: Stage04  training is Completed and  model saved>>>>
+[2021-11-06 15:27:00,589: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 15:27:00,591: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 15:27:00,593: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 15:27:00,593: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 15:27:01,016: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 15:27:01,017: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 15:27:01,019: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+
+[2021-11-06 15:27:01,020: INFO: stage_04_train]: Ended: Stage04  training is Completed and  model saved>>>>
+[2021-11-06 17:00:34,261: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 17:00:34,263: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 17:00:34,264: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 17:00:34,265: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 17:00:34,613: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 17:00:34,613: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 17:00:34,614: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+[2021-11-06 17:00:34,614: ERROR: stage_04_train]: module 'keras.api._v2.keras.preprocessing.image' has no attribute 'imageDataGenerator'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 59, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 44, in train_model
+    do_data_augmentation=params["AUGMENTATION"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/data_management.py", line 24, in train_valid_generator
+    valid_datagenerator=tf.keras.preprocessing.image.imageDataGenerator(**datagenerator_kwargs)
+AttributeError: module 'keras.api._v2.keras.preprocessing.image' has no attribute 'imageDataGenerator'
+[2021-11-06 17:01:00,316: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 17:01:00,318: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 17:01:00,319: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 17:01:00,319: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 17:01:00,661: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 17:01:00,661: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 17:01:00,662: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+[2021-11-06 17:01:00,768: ERROR: stage_04_train]: __init__() got an unexpected keyword argument 'heigth_shift_width'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 59, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 44, in train_model
+    do_data_augmentation=params["AUGMENTATION"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/data_management.py", line 42, in train_valid_generator
+    zoom_range=0.2,**datagenerator_kwargs
+TypeError: __init__() got an unexpected keyword argument 'heigth_shift_width'
+[2021-11-06 17:01:23,711: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 17:01:23,713: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 17:01:23,714: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 17:01:23,714: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 17:01:24,057: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 17:01:24,057: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 17:01:24,058: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+[2021-11-06 17:01:24,165: ERROR: stage_04_train]: __init__() got an unexpected keyword argument 'height_shift_width'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 59, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 44, in train_model
+    do_data_augmentation=params["AUGMENTATION"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/data_management.py", line 42, in train_valid_generator
+    zoom_range=0.2,**datagenerator_kwargs
+TypeError: __init__() got an unexpected keyword argument 'height_shift_width'
+[2021-11-06 17:01:48,183: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 17:01:48,185: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 17:01:48,186: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 17:01:48,186: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 17:01:48,545: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 17:01:48,545: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 17:01:48,547: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+[2021-11-06 17:01:48,650: ERROR: stage_04_train]: __init__() got an unexpected keyword argument 'hear_range'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 59, in <module>
+    train_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 44, in train_model
+    do_data_augmentation=params["AUGMENTATION"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/data_management.py", line 44, in train_valid_generator
+    zoom_range=0.2,**datagenerator_kwargs
+TypeError: __init__() got an unexpected keyword argument 'hear_range'
+[2021-11-06 17:01:58,238: INFO: stage_04_train]:  
+
+>>>  Starting: Stage 04 Training Started
+[2021-11-06 17:01:58,241: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 17:01:58,242: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 17:01:58,242: INFO: all_utils]: directory saved at artifacts/model
+[2021-11-06 17:01:58,581: WARNING: hdf5_format]: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+[2021-11-06 17:01:58,582: INFO: models]: untrained model is read from artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-06 17:01:58,583: INFO: callbacks]:  saved callbacks loaded from artifacts/callbacks
+[2021-11-06 17:01:58,687: INFO: data_management]: Data Augmentation is done for training
+[2021-11-06 17:01:58,792: INFO: data_management]: Training and Validation generators are created
+[2021-11-06 17:01:58,793: INFO: stage_04_train]: Ended: Stage04  training is Completed and  model saved>>>>
