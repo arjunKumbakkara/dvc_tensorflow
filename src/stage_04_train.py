@@ -1,5 +1,7 @@
 from src.utils.all_utils import create_directory, read_yaml
 import argparse
+from src.utils.models import get_callbacks
+from src.utils.models import load_full_model
 import pandas as pd
 #import sys
 import os
@@ -23,9 +25,18 @@ def train_model(config_path,params_path):
     params=read_yaml(params_path)
     artifacts= config["artifacts"]
     artifacts_dir= artifacts["ARTIFACTS_DIR"]
+
+    train_model_dir_path=os.path.join(artifacts_dir,artifacts["TRAINED_MODEL_DIR"])
    
+    create_directory([train_model_dir_path])
+    untrained_full_model_path=os.path.join(artifacts_dir,artifacts["BASE_MODEL_DIR"],
+    artifacts["UPDATED_BASE_MODEL_NAME"])
 
-
+    model=load_full_model(untrained_full_model_path)
+    callback_dir_path=os.path.join(artifacts_dir,artifacts["CALLBACKS_DIR"])
+    callbacks= get_callbacks(callback_dir_path)
+    
+    
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
