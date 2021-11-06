@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parsed_args =args.parse_args()
 
     try:
-        logging.info(" >>>  Starting: Stage 04 Training Started")
+        logging.info(" \n\n>>>  Starting: Stage 04 Training Started")
         train_model(config_path=parsed_args.config,params_path=parsed_args.params)
         logging.info("Ended: Stage04  training is Completed and  model saved>>>>")
     except Exception as e:
