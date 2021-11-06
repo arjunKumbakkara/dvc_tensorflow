@@ -13,3 +13,614 @@ Traceback (most recent call last):
   File "src/stage_01_load_save.py", line 55, in <module>
     throw()
 NameError: name 'throw' is not defined
+[2021-11-05 22:59:39,768: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 22:59:39,813: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 22:59:39,816: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 22:59:39,820: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 22:59:39,894: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 22:59:56,321: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 22:59:56,418: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 22:59:56,418: ERROR: stage_02_prepare_base_model]: name 'prepare_model' is not defined
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 68, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 41, in prepare_base_model
+    full_model = prepare_model(
+NameError: name 'prepare_model' is not defined
+[2021-11-05 23:00:44,005: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:00:44,007: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:00:44,008: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:00:44,009: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:00:44,009: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:00:44,405: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:00:44,574: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:00:44,574: ERROR: stage_02_prepare_base_model]: 'LEARNING_RATE'
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 69, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 47, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+KeyError: 'LEARNING_RATE'
+[2021-11-05 23:01:03,629: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:01:03,631: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:01:03,632: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:01:03,633: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:01:03,633: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:01:04,013: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:01:04,338: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:01:04,373: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 69, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 47, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:02:43,026: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:02:43,028: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:02:43,029: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:02:43,030: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:02:43,030: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:02:43,418: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:02:43,930: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:02:43,942: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 69, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 47, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:03:25,702: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:03:25,704: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:03:25,705: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:03:25,706: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:03:25,706: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:03:26,087: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:03:26,634: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:03:26,669: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 68, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 47, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:04:47,193: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:04:47,195: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:04:47,196: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:04:47,197: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:04:47,197: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:04:47,599: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:04:47,970: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:04:47,997: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 72, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 50, in prepare_base_model
+    learning_rate=learning_rate_val
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:21:28,232: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:21:28,234: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:21:28,235: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:21:28,236: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:21:28,236: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:21:28,652: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:21:30,185: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:21:30,200: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 48, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:23:54,085: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:23:54,087: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:23:54,088: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:23:54,089: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:23:54,089: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:23:54,500: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:23:54,648: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:23:54,663: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 48, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 42, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:25:00,700: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:25:00,702: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:25:00,703: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:25:00,704: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:25:00,704: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:25:01,158: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:25:01,445: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:25:01,479: ERROR: stage_02_prepare_base_model]: module 'keras.api._v2.keras.models' has no attribute 'model'
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 48, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 40, in prepare_model
+    full_model = tf.keras.models.model(
+AttributeError: module 'keras.api._v2.keras.models' has no attribute 'model'
+[2021-11-05 23:27:27,184: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:27:27,186: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:27:27,187: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:27:27,188: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:27:27,188: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:27:27,597: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:27:27,702: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:27:27,714: ERROR: stage_02_prepare_base_model]: ('Keyword argument not understood:', 'input')
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 48, in prepare_base_model
+    learning_rate=params["LEARNING_RATE"]
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/models.py", line 43, in prepare_model
+    outputs= prediction
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/env/lib/python3.7/site-packages/keras/utils/generic_utils.py", line 1170, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'input')
+[2021-11-05 23:28:25,825: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:28:25,826: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:28:25,828: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:28:25,829: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:28:25,829: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:28:26,247: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:28:26,355: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:28:26,430: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:28:26,435: INFO: stage_02_prepare_base_model]: None
+[2021-11-05 23:28:26,435: ERROR: stage_02_prepare_base_model]: 'UPDATED_BASE_MODEL_NAME'
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 54, in prepare_base_model
+    update_base_model_path = os.path.join(base_model_dir_path,artifacts["UPDATED_BASE_MODEL_NAME"])
+KeyError: 'UPDATED_BASE_MODEL_NAME'
+[2021-11-05 23:28:53,042: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:28:53,044: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:28:53,045: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:28:53,046: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:28:53,046: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:28:53,465: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:28:53,571: INFO: models]: VGG16 base model saved at artifacts/base_model/updated_VGG16_base_model.h5
+[2021-11-05 23:28:53,646: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:28:53,651: INFO: stage_02_prepare_base_model]: None
+[2021-11-05 23:28:53,651: ERROR: stage_02_prepare_base_model]: 'UPDATE_BASE_MODEL_NAME'
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 54, in prepare_base_model
+    update_base_model_path = os.path.join(base_model_dir_path,artifacts["UPDATE_BASE_MODEL_NAME"])
+KeyError: 'UPDATE_BASE_MODEL_NAME'
+[2021-11-05 23:29:53,201: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:29:53,203: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:29:53,205: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:29:53,206: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:29:53,206: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:29:53,636: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:29:53,734: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:29:53,808: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:29:53,813: INFO: stage_02_prepare_base_model]: None
+[2021-11-05 23:29:53,813: ERROR: stage_02_prepare_base_model]: 'UPDATE_BASE_MODEL_NAME'
+Traceback (most recent call last):
+  File "src/stage_02_prepare_base_model.py", line 70, in <module>
+    prepare_base_model(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_02_prepare_base_model.py", line 54, in prepare_base_model
+    update_base_model_path = os.path.join(base_model_dir_path,artifacts["UPDATE_BASE_MODEL_NAME"])
+KeyError: 'UPDATE_BASE_MODEL_NAME'
+[2021-11-05 23:30:04,259: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:30:04,261: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:30:04,262: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:30:04,264: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:30:04,264: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:30:04,677: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:30:04,783: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:30:04,858: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:30:04,863: INFO: stage_02_prepare_base_model]: None
+[2021-11-05 23:30:04,863: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:30:04,981: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-05 23:53:44,360: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:53:44,362: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:53:44,363: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:53:44,364: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:53:44,364: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:53:44,783: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:53:44,887: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:53:44,962: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:53:44,964: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 0
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+[2021-11-05 23:53:44,964: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:53:45,071: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-05 23:57:25,392: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:57:25,394: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:57:25,395: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:57:25,396: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:57:25,396: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:57:25,805: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:57:25,908: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:57:25,983: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:57:25,986: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 0
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+[2021-11-05 23:57:25,986: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:57:26,091: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-05 23:58:04,101: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:58:04,103: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:58:04,104: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:58:04,105: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:58:04,105: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:58:04,530: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:58:04,637: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:58:04,711: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:58:04,714: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 14,714,688
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-05 23:58:04,714: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:58:04,821: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-05 23:59:28,505: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-05 23:59:28,508: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-05 23:59:28,511: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:59:28,514: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-05 23:59:28,514: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-05 23:59:29,142: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:59:29,309: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-05 23:59:29,409: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-05 23:59:29,420: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 14,714,688
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-05 23:59:29,421: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-05 23:59:29,586: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-06 00:00:04,482: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-06 00:00:04,484: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 00:00:04,485: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 00:00:04,486: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 00:00:04,486: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-06 00:00:04,903: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-06 00:00:05,008: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-06 00:00:05,081: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-06 00:00:05,084: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 14,714,688
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-06 00:00:05,084: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-06 00:00:05,589: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-06 00:06:52,252: INFO: stage_02_prepare_base_model]:  >>>  Starting: Stage 02 prepareStarted
+[2021-11-06 00:06:52,254: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 00:06:52,256: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 00:06:52,257: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 00:06:52,257: INFO: all_utils]: directory saved at artifacts/base_model
+[2021-11-06 00:06:52,667: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-06 00:06:52,770: INFO: models]: VGG16 base model saved at artifacts/base_model/VGG16_base_model.h5
+[2021-11-06 00:06:52,843: INFO: models]: Custom model is compiled and is ready to be trained!
+[2021-11-06 00:06:52,846: INFO: stage_02_prepare_base_model]: full model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 2,359,808
+Non-trainable params: 12,354,880
+_________________________________________________________________
+
+[2021-11-06 00:06:52,846: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2021-11-06 00:06:52,952: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
