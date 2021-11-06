@@ -13,7 +13,7 @@ def create_and_save_tensorboard_callback(callbacks_dir,tensorboard_log_dir):
     unique_name= get_timestamp("tb_logs")
 
     tb_running_log_dir=os.path.join(callbacks_dir,unique_name)
-    tensorboard_calllback = tf.keras.callbacks.TensoBoard(log_dir=tb_running_log_dir)
+    tensorboard_calllback = tf.keras.callbacks.TensorBoard(log_dir=tb_running_log_dir)
     
     
     tb_callback_filepath=os.path.join(callbacks_dir,"tensorboard_cb.cb")

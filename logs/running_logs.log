@@ -624,3 +624,27 @@ _________________________________________________________________
 
 [2021-11-06 00:06:52,846: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
 [2021-11-06 00:06:52,952: INFO: stage_02_prepare_base_model]: Ended: Stage02 Completed and base model created.>>>>
+[2021-11-06 13:57:03,964: INFO: stage_03_prepare_callback]:  >>>  Starting: Stage 03 prepare model Callbacks
+[2021-11-06 13:57:03,970: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 13:57:03,974: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 13:57:03,974: INFO: all_utils]: directory saved at artifacts/tensorboard_log_dir
+[2021-11-06 13:57:03,974: INFO: all_utils]: directory saved at artifacts/checkpoints
+[2021-11-06 13:57:03,974: INFO: all_utils]: directory saved at artifacts/callbacks
+[2021-11-06 13:57:03,975: ERROR: stage_03_prepare_callback]: module 'keras.api._v2.keras.callbacks' has no attribute 'TensoBoard'
+Traceback (most recent call last):
+  File "src/stage_03_prepare_callback.py", line 48, in <module>
+    prepare_callbacks(config_path=parsed_args.config,params_path=parsed_args.params)
+  File "src/stage_03_prepare_callback.py", line 34, in prepare_callbacks
+    create_and_save_tensorboard_callback(callbacks_dir,tensorboard_log_dir)
+  File "/media/arjunkumbakkara/4443c986-ea4a-4ae4-8ce3-ac3e59ad2293/arjunkumbakkara/AIOPS/dvc_tensorflow/src/utils/callbacks.py", line 16, in create_and_save_tensorboard_callback
+    tensorboard_calllback = tf.keras.callbacks.TensoBoard(log_dir=tb_running_log_dir)
+AttributeError: module 'keras.api._v2.keras.callbacks' has no attribute 'TensoBoard'
+[2021-11-06 13:57:44,761: INFO: stage_03_prepare_callback]:  >>>  Starting: Stage 03 prepare model Callbacks
+[2021-11-06 13:57:44,763: INFO: all_utils]: yaml file read: config/config.yaml  loaded successfully.
+[2021-11-06 13:57:44,764: INFO: all_utils]: yaml file read: params.yaml  loaded successfully.
+[2021-11-06 13:57:44,765: INFO: all_utils]: directory saved at artifacts/tensorboard_log_dir
+[2021-11-06 13:57:44,765: INFO: all_utils]: directory saved at artifacts/checkpoints
+[2021-11-06 13:57:44,765: INFO: all_utils]: directory saved at artifacts/callbacks
+[2021-11-06 13:57:44,765: INFO: callbacks]: Tensorboard Callback is saved at artifacts/callbacks/tensorboard_cb.cb
+[2021-11-06 13:57:44,767: INFO: callbacks]: Checkppoint callback is being saved at artifacts/callbacks/checkpoint_cb.cb
+[2021-11-06 13:57:44,767: INFO: stage_03_prepare_callback]: Ended: Stage03 Completed and Callbacks stored as binary in artifacts>>>>
