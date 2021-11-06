@@ -1,5 +1,4 @@
 from src.utils.all_utils import create_directory, read_yaml
-from src.utils.models import get_VGG_16_model, prepare_model 
 from src.utils.callbacks import create_and_save_checkpoint_callback,create_and_save_tensorboard_callback
 import argparse
 import pandas as pd
